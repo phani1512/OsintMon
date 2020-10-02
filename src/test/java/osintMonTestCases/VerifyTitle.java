@@ -3,7 +3,7 @@ package osintMonTestCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Selenium.OsintMon.Constaints;
+import constaints.Constaints;
 
 
 public class VerifyTitle extends Constaints {
