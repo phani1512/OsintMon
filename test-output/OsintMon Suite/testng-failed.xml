@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OsintMon Suite]">
+  <test thread-count="5" name="VerifyTitle(failed)">
+    <classes>
+      <class name="osintMonTestCases.VerifyTitle$Title">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUrl"/>
+          <include name="verifyPageTitle"/>
+          <include name="endReport"/>
+          <include name="verifyHomePage"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- osintMonTestCases.VerifyTitle$Title -->
+    </classes>
+  </test> <!-- VerifyTitle(failed) -->
+</suite> <!-- Failed suite [OsintMon Suite] -->
