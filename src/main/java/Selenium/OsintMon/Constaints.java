@@ -38,8 +38,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
     		public static ExtentHtmlReporter htmlReporter;
     		public static ExtentReports extent;
     		public ExtentTest test;
-    		String concatenate = ".";
-    		
     		@BeforeSuite
     		public static void SetUrl() throws InterruptedException, IOException {
     			System.setProperty("webdriver.chrome.silentOutput","true");
@@ -50,7 +48,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
     			driver = new ChromeDriver();
     			driver.manage().deleteAllCookies();
     			Properties prop =new Properties();
-    			FileInputStream fis = new FileInputStream("D:\\Selenium\\Selenium-OsintMon\\OsintMon\\configs\\Configurations.Properties");
+    			FileInputStream fis = new FileInputStream("C:\\Users\\phane\\git\\OsintMon\\configs\\Configurations.Properties");
     			prop.load(fis);
     	    	driver.get(prop.getProperty("url"));
     	    	Thread.sleep(2000);
