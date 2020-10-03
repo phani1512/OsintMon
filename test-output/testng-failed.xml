@@ -4,17 +4,19 @@
   <listeners>
     <listener class-name="Listener.TestListener"/>
   </listeners>
-  <test thread-count="5" name="InvalidCredentials(failed)">
+  <test thread-count="5" name="ValidLogin(failed)">
+    <parameter name="userName" value="habeeb"/>
+    <parameter name="Password" value="habeeb@cts"/>
     <classes>
-      <class name="invalidTestCases.InvalidLogin">
+      <class name="validTestcases.ValidLogin">
         <methods>
-          <include name="NoCredentials"/>
+          <include name="InvalidCredentials"/>
           <include name="getResult"/>
           <include name="SetUrl"/>
           <include name="endReport"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- invalidTestCases.InvalidLogin -->
+      </class> <!-- validTestcases.ValidLogin -->
     </classes>
-  </test> <!-- InvalidCredentials(failed) -->
+  </test> <!-- ValidLogin(failed) -->
 </suite> <!-- Failed suite [OsintMon Suite] -->
