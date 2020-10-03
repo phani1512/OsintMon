@@ -14,7 +14,6 @@ public class VerifyTitle extends Constaints {
 			// Actual title
 			String Title = driver.getTitle().trim();
 			System.out.println("The page title is : " + Title);
-		//	String Expected_title = "Welcome to OSINTMon";
 			String Expected_title = "Welcome to OSINTMon";
 			Assert.assertEquals(Title, Expected_title);
 			System.out.println("Title verified");

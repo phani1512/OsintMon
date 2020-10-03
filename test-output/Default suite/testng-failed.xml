@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="osintMonTestCases.VerifyTitle">
+      <class name="invalidTestCases.InvalidLogin">
         <methods>
-          <include name="tearDown"/>
+          <include name="NoCredentials"/>
+          <include name="getResult"/>
           <include name="SetUrl"/>
           <include name="endReport"/>
-          <include name="verifyPageTitle"/>
-          <include name="getResult"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- osintMonTestCases.VerifyTitle -->
+      </class> <!-- invalidTestCases.InvalidLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [OsintMon Suite]">
-  <test thread-count="5" name="VerifyTitle(failed)">
+  <listeners>
+    <listener class-name="Listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="InvalidCredentials(failed)">
     <classes>
-      <class name="osintMonTestCases.VerifyTitle$Title">
+      <class name="invalidTestCases.InvalidLogin">
         <methods>
-          <include name="tearDown"/>
-          <include name="SetUrl"/>
-          <include name="verifyPageTitle"/>
-          <include name="endReport"/>
-          <include name="verifyHomePage"/>
+          <include name="NoCredentials"/>
           <include name="getResult"/>
+          <include name="SetUrl"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- osintMonTestCases.VerifyTitle$Title -->
+      </class> <!-- invalidTestCases.InvalidLogin -->
     </classes>
-  </test> <!-- VerifyTitle(failed) -->
+  </test> <!-- InvalidCredentials(failed) -->
 </suite> <!-- Failed suite [OsintMon Suite] -->

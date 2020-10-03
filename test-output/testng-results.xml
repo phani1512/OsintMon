@@ -1,42 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="456" started-at="2020-10-02T16:19:40Z" finished-at="2020-10-02T16:19:41Z">
+  <suite name="OsintMon Suite" duration-ms="10618" started-at="2020-10-03T17:28:33Z" finished-at="2020-10-03T17:28:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="456" started-at="2020-10-02T16:19:40Z" finished-at="2020-10-02T16:19:41Z">
-      <class name="Selenium.OsintMon.Constaints">
-        <test-method status="PASS" signature="SetUrl()[pri:0, instance:Selenium.OsintMon.Constaints@233fe9b6]" name="SetUrl" is-config="true" duration-ms="16338" started-at="2020-10-02T16:19:24Z" finished-at="2020-10-02T16:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUrl -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:Selenium.OsintMon.Constaints@233fe9b6]" name="endReport" is-config="true" duration-ms="410" started-at="2020-10-02T16:19:40Z" finished-at="2020-10-02T16:19:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Selenium.OsintMon.Constaints@233fe9b6]" name="tearDown" is-config="true" duration-ms="663" started-at="2020-10-02T16:19:41Z" finished-at="2020-10-02T16:19:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.OsintMon.Constaints -->
+    <test name="VerifyTitle" duration-ms="554" started-at="2020-10-03T17:28:33Z" finished-at="2020-10-03T17:28:34Z">
       <class name="osintMonTestCases.VerifyTitle">
-        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:osintMonTestCases.VerifyTitle@358ee631]" name="verifyPageTitle" duration-ms="17" started-at="2020-10-02T16:19:40Z" finished-at="2020-10-02T16:19:40Z">
+        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:osintMonTestCases.VerifyTitle@52a86356]" name="verifyPageTitle" duration-ms="23" started-at="2020-10-03T17:28:33Z" finished-at="2020-10-03T17:28:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:osintMonTestCases.VerifyTitle@358ee631]" name="getResult" is-config="true" duration-ms="12" started-at="2020-10-02T16:19:40Z" finished-at="2020-10-02T16:19:40Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:osintMonTestCases.VerifyTitle@52a86356]" name="getResult" is-config="true" duration-ms="14" started-at="2020-10-03T17:28:33Z" finished-at="2020-10-03T17:28:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=VerifyTitle.verifyPageTitle()[pri:0, instance:osintMonTestCases.VerifyTitle@358ee631] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=VerifyTitle.verifyPageTitle()[pri:0, instance:osintMonTestCases.VerifyTitle@52a86356] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:osintMonTestCases.VerifyTitle@52a86356]" name="endReport" is-config="true" duration-ms="496" started-at="2020-10-03T17:28:33Z" finished-at="2020-10-03T17:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- osintMonTestCases.VerifyTitle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- VerifyTitle -->
+    <test name="NoCredentials" duration-ms="10045" started-at="2020-10-03T17:28:34Z" finished-at="2020-10-03T17:28:44Z">
+      <class name="invalidTestCases.InvalidLogin">
+        <test-method status="PASS" signature="SetUrl()[pri:0, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="SetUrl" is-config="true" duration-ms="27509" started-at="2020-10-03T17:28:06Z" finished-at="2020-10-03T17:28:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUrl -->
+        <test-method status="PASS" signature="NoCredentials()[pri:1, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="NoCredentials" duration-ms="5662" started-at="2020-10-03T17:28:34Z" finished-at="2020-10-03T17:28:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoCredentials -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="getResult" is-config="true" duration-ms="2" started-at="2020-10-03T17:28:39Z" finished-at="2020-10-03T17:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NoCredentials status=SUCCESS method=InvalidLogin.NoCredentials()[pri:1, instance:invalidTestCases.InvalidLogin@65e2dbf3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="InvalidCredentials()[pri:2, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="InvalidCredentials" duration-ms="4322" started-at="2020-10-03T17:28:39Z" finished-at="2020-10-03T17:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidCredentials -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="getResult" is-config="true" duration-ms="0" started-at="2020-10-03T17:28:44Z" finished-at="2020-10-03T17:28:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidCredentials status=SUCCESS method=InvalidLogin.InvalidCredentials()[pri:2, instance:invalidTestCases.InvalidLogin@65e2dbf3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="endReport" is-config="true" duration-ms="36" started-at="2020-10-03T17:28:44Z" finished-at="2020-10-03T17:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:invalidTestCases.InvalidLogin@65e2dbf3]" name="tearDown" is-config="true" duration-ms="769" started-at="2020-10-03T17:28:44Z" finished-at="2020-10-03T17:28:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- invalidTestCases.InvalidLogin -->
+    </test> <!-- NoCredentials -->
+  </suite> <!-- OsintMon Suite -->
 </testng-results>

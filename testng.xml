@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="OsintMon Suite">
-<listeners>
+	<listeners>
 		<listener class-name="Listener.TestListener" />
 	</listeners>
 	<test name="VerifyTitle">
@@ -14,6 +14,12 @@
 			<class name="invalidTestCases.InvalidLogin"></class>
 		</classes>
 	</test>
-	<test thread-count="5" name="Test">
-	</test> <!-- Test -->
+	<test name="ValidLogin">
+	<parameter name="emailId"
+			value="phaneendraphani20@gmail.com" />
+		<parameter name="password" value="Phaneendra@15" />
+		<classes>
+			<class name="validTestcases.ValidLogin"></class>
+		</classes>
+	</test>
 </suite> <!-- Suite -->
