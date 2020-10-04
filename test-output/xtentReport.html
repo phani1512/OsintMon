@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 3, 2020 11:36:21 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 4, 2020 11:34:32 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -68,6 +68,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -110,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>5</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -134,14 +135,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyPageTitle</span>
-						<span class='test-time'>Oct 3, 2020 11:36:21 PM</span>
+						<span class='test-time'>Oct 4, 2020 11:34:33 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 3, 2020 11:36:21 PM</span>
-	<span class='label end-time'>Oct 3, 2020 11:36:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+17ms</span>
+	<span class='label start-time'>Oct 4, 2020 11:34:33 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:34:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+37ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -155,7 +156,7 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:36:21 PM</td>
+				<td class='timestamp'>11:34:33 PM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'>verifyPageTitle Test Case PASSED</span>
 					
@@ -166,17 +167,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>NoCredentials</span>
-						<span class='test-time'>Oct 3, 2020 11:36:22 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Oct 4, 2020 11:34:34 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 3, 2020 11:36:22 PM</span>
-	<span class='label end-time'>Oct 3, 2020 11:36:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+261ms</span>
+	<span class='label start-time'>Oct 4, 2020 11:34:34 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:35:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 16s+5ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -188,12 +189,38 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:36:38 PM</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:35:40 PM</td>
 				<td class='step-details'>
-						<span class='badge white-text green'>NoCredentials Test Case PASSED</span>
+						<span class='badge white-text red'>NoCredentials - Test Case Failed</span>
 					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:35:40 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-EAC6D0I', ip: '192.168.29.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\phane\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 43428faed658ad7c198ce95842eb7158 - Test Case Failed</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:35:50 PM</td>
+				<td class='step-details'>
+						Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-EAC6D0I', ip: '192.168.29.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\phane\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 43428faed658ad7c198ce95842eb7158
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\phane\git\OsintMon/Screenshots/NoCredentials20201004113540.png' src='C:\Users\phane\git\OsintMon/Screenshots/NoCredentials20201004113540.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -204,14 +231,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>InvalidCredentials</span>
-						<span class='test-time'>Oct 3, 2020 11:36:38 PM</span>
+						<span class='test-time'>Oct 4, 2020 11:35:50 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 3, 2020 11:36:38 PM</span>
-	<span class='label end-time'>Oct 3, 2020 11:36:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+297ms</span>
+	<span class='label start-time'>Oct 4, 2020 11:35:50 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:35:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+766ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -225,9 +252,181 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:36:42 PM</td>
+				<td class='timestamp'>11:35:55 PM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'>InvalidCredentials Test Case PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>ValidLogin</span>
+						<span class='test-time'>Oct 4, 2020 11:35:55 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2020 11:35:55 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:36:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+121ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:36:24 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>validCredentials - Test Case Failed</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:36:24 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@id='btnproceed'])[2]"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-EAC6D0I', ip: '192.168.29.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\phane\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 43428faed658ad7c198ce95842eb7158
+*** Element info: {Using=xpath, value=(//button[@id='btnproceed'])[2]} - Test Case Failed</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:36:25 PM</td>
+				<td class='step-details'>
+						no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@id='btnproceed'])[2]"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-EAC6D0I', ip: '192.168.29.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\phane\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 43428faed658ad7c198ce95842eb7158
+*** Element info: {Using=xpath, value=(//button[@id='btnproceed'])[2]}
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\phane\git\OsintMon/Screenshots/validCredentials20201004113624.png' src='C:\Users\phane\git\OsintMon/Screenshots/validCredentials20201004113624.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>viewMonitor</span>
+						<span class='test-time'>Oct 4, 2020 11:36:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2020 11:36:25 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:36:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+936ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:36:27 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>viewMonitor Test Case PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>dropdownSelection</span>
+						<span class='test-time'>Oct 4, 2020 11:36:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2020 11:36:27 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:37:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 46s+340ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:37:13 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>dropdownSelection Test Case PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>logOut</span>
+						<span class='test-time'>Oct 4, 2020 11:37:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 4, 2020 11:37:13 PM</span>
+	<span class='label end-time'>Oct 4, 2020 11:37:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+428ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:37:15 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>logOut Test Case PASSED</span>
 					
 				</td>
 			</tr>
@@ -264,7 +463,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -276,19 +475,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 3, 2020 11:36:21 PM</div>
+					<div class='panel-lead'>Oct 4, 2020 11:34:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 3, 2020 11:36:42 PM</div>
+			 		<div class='panel-lead'>Oct 4, 2020 11:37:15 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 21s+236ms</div>
+					<div class='panel-lead'>0h 2m 42s+637ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -331,14 +530,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
-				passParent: 3,
-				failParent: 0,
+                parentCount: 7,
+				passParent: 5,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 2,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -363,7 +562,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "verifyPageTitle":0.017,"NoCredentials":16.261,"InvalidCredentials":4.297
+			        "verifyPageTitle":0.037,"NoCredentials":76.005,"InvalidCredentials":4.766,"ValidLogin":30.121,"viewMonitor":1.936,"dropdownSelection":46.34,"logOut":1.428
 			};
 		</script>
 	

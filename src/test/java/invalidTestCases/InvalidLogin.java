@@ -27,7 +27,7 @@ public class InvalidLogin extends Constaints {
 		test = extent.createTest("NoCredentials");
 		driver.findElement(By.id("lnkLogin")).click();
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(6000);
 			driver.findElement(By.id("txtUserName")).clear();
 			driver.findElement(By.id("txtPassword")).clear();
 			driver.findElement(By.id("btnLogin1")).click();
@@ -40,7 +40,7 @@ public class InvalidLogin extends Constaints {
 		}
 
 	}
-	
+
 	@Test(priority = 2)
 	public void InvalidCredentials() throws IOException {
 		test = extent.createTest("InvalidCredentials");
@@ -61,7 +61,7 @@ public class InvalidLogin extends Constaints {
 			String Actual = driver.findElement(By.id("lblError")).getText();
 			String Expected = "Invalid Username or bad password supplied.";
 			Assert.assertEquals(Actual, Expected);
-			
+
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

@@ -14,12 +14,12 @@
 			<class name="invalidTestCases.InvalidLogin"></class>
 		</classes>
 	</test>
-<!--  	<test name="ValidLogin">
-		<parameter name="userName"
-			value="habeeb" />
+	<test name="ValidLogin">
+		<parameter name="userName" value="habeeb" />
 		<parameter name="password" value="habeeb@cts" />
+		<parameter name="expectedUserName" value="Welcome Habeeb" />
 		<classes>
 			<class name="validTestcases.ValidLogin"></class>
 		</classes>
-	</test> -->
+	</test>
 </suite> <!-- Suite -->

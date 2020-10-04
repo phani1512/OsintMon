@@ -9,15 +9,79 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">OsintMon Suite</th></tr>
-<tr><td><a href="#t0">VerifyTitle</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">470</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">NoCredentials</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">20,613</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">21,083</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">VerifyTitle</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,382</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">NoCredentials</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,834</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ValidLogin</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">79,898</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num attn">2</th><th class="num">162,114</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OsintMon Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">VerifyTitle &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">osintMonTestCases.VerifyTitle</td><td><a href="#m0">verifyPageTitle</a></td><td rowspan="1">1601748381737</td><td rowspan="1">17</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">NoCredentials &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">invalidTestCases.InvalidLogin</td><td><a href="#m1">InvalidCredentials</a></td><td rowspan="1">1601748398489</td><td rowspan="1">4301</td></tr><tr class="passedeven"><td><a href="#m2">NoCredentials</a></td><td rowspan="1">1601748382218</td><td rowspan="1">16251</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OsintMon Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">VerifyTitle &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">osintMonTestCases.VerifyTitle</td><td><a href="#m0">verifyPageTitle</a></td><td rowspan="1">1601834673023</td><td rowspan="1">42</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">NoCredentials &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">invalidTestCases.InvalidLogin</td><td><a href="#m1">NoCredentials</a></td><td rowspan="1">1601834674391</td><td rowspan="1">66242</td></tr><tr><th colspan="4">NoCredentials &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">invalidTestCases.InvalidLogin</td><td><a href="#m2">InvalidCredentials</a></td><td rowspan="1">1601834750399</td><td rowspan="1">4764</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ValidLogin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">validTestcases.ValidLogin</td><td><a href="#m3">validCredentials</a></td><td rowspan="1">1601834755248</td><td rowspan="1">29071</td></tr><tr><th colspan="4">ValidLogin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">validTestcases.ValidLogin</td><td><a href="#m4">dropdownSelection</a></td><td rowspan="1">1601834787317</td><td rowspan="1">46337</td></tr><tr class="passedeven"><td><a href="#m5">logOut</a></td><td rowspan="1">1601834833659</td><td rowspan="1">1416</td></tr><tr class="passedeven"><td><a href="#m6">viewMonitor</a></td><td rowspan="1">1601834785372</td><td rowspan="1">1941</td></tr></tbody>
 </table>
 <h2>VerifyTitle</h2><h3 id="m0">osintMonTestCases.VerifyTitle#verifyPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>NoCredentials</h2><h3 id="m1">invalidTestCases.InvalidLogin#InvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">invalidTestCases.InvalidLogin#NoCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NoCredentials</h2><h3 id="m1">invalidTestCases.InvalidLogin#NoCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-EAC6D0I&apos;, ip: &apos;192.168.29.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\phane\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 43428faed658ad7c198ce95842eb7158
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:381)
+	at org.openqa.selenium.By$ById.findElement(By.java:194)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at invalidTestCases.InvalidLogin.NoCredentials(InvalidLogin.java:31)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	... 30 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:44275 after 60000 ms
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
+	... 39 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:44275 after 60000 ms
+	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">invalidTestCases.InvalidLogin#InvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ValidLogin</h2><h3 id="m3">validTestcases.ValidLogin#validCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>habeeb</td><td>habeeb@cts</td><td>Welcome Habeeb</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@id=&apos;btnproceed&apos;])[2]&quot;}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;DESKTOP-EAC6D0I&apos;, ip: &apos;192.168.29.122&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\phane\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 43428faed658ad7c198ce95842eb7158
+*** Element info: {Using=xpath, value=(//button[@id=&apos;btnproceed&apos;])[2]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at validTestcases.ValidLogin.validCredentials(ValidLogin.java:34)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">validTestcases.ValidLogin#dropdownSelection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">validTestcases.ValidLogin#logOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">validTestcases.ValidLogin#viewMonitor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
