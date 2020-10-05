@@ -20,7 +20,6 @@ public class ValidLogin extends Constaints {
 	@Test(priority = 3)
 	public void validCredentials(String userName, String password, String expectedUserName) throws IOException {
 		test = extent.createTest("ValidLogin");
-
 		try {
 			Thread.sleep(2000);
 			WebElement username = driver.findElement(By.id("txtUserName"));
@@ -31,9 +30,10 @@ public class ValidLogin extends Constaints {
 			Password.sendKeys(password);
 			driver.findElement(By.id("btnLogin1")).click();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			if(driver.findElements(By.xpath("(//button[@id='btnproceed'])[2]")).size()!=0) {		
 			boolean dodPresent = driver.findElement(By.xpath("(//button[@id='btnproceed'])[2]")).isDisplayed();
 			boolean dodEnabled = driver.findElement(By.xpath("(//button[@id='btnproceed'])[2]")).isEnabled();
-			if (dodPresent == true && dodEnabled == true) {
+			if (dodPresent && dodEnabled) {
 				driver.findElement(By.xpath("(//button[@id='btnproceed'])[2]")).click();
 				@SuppressWarnings("deprecation")
 				WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -44,6 +44,14 @@ public class ValidLogin extends Constaints {
 				System.out.println("Login Successfull & UserName verified");
 				Thread.sleep(2000);
 			} else {
+				String veriyUserName = driver.findElement(By.id("lblWelcome")).getText();
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				Assert.assertEquals(veriyUserName, expectedUserName);
+				System.out.println("UserName verified");
+				Thread.sleep(2000);
+				System.out.println("Login Successfull");
+			}
+			}else {
 				String veriyUserName = driver.findElement(By.id("lblWelcome")).getText();
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				Assert.assertEquals(veriyUserName, expectedUserName);
@@ -72,13 +80,13 @@ public class ValidLogin extends Constaints {
 	}
 	
 	@Test(priority = 5)
-	public void dropdownSelection() throws IOException {
+	public void dropdownSelection() throws IOException, InterruptedException {
 		test = extent.createTest("dropdownSelection");
 		WebElement Language = driver.findElement(By.id("ddlLanguage"));
 		Select select = new Select(Language);
 		select.getOptions();
 		select.selectByIndex(0);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Thread.sleep(3000);
 		String selectedLanguage = driver.findElement(By.id("lblWebsitesHeading")).getText().trim();
 		selectedLanguage.trim();
 		String expectedLanguage = "المراقبة";

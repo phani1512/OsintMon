@@ -4,19 +4,6 @@
   <listeners>
     <listener class-name="Listener.TestListener"/>
   </listeners>
-  <test thread-count="5" name="NoCredentials(failed)">
-    <classes>
-      <class name="invalidTestCases.InvalidLogin">
-        <methods>
-          <include name="NoCredentials"/>
-          <include name="getResult"/>
-          <include name="SetUrl"/>
-          <include name="endReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- invalidTestCases.InvalidLogin -->
-    </classes>
-  </test> <!-- NoCredentials(failed) -->
   <test thread-count="5" name="ValidLogin(failed)">
     <parameter name="expectedUserName" value="Welcome Habeeb"/>
     <parameter name="password" value="habeeb@cts"/>
@@ -27,8 +14,8 @@
           <include name="getResult"/>
           <include name="SetUrl"/>
           <include name="endReport"/>
-          <include name="validCredentials" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="dropdownSelection"/>
         </methods>
       </class> <!-- validTestcases.ValidLogin -->
     </classes>
