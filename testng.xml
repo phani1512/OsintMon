@@ -6,12 +6,12 @@
 	</listeners>
 	<test name="VerifyTitle">
 		<classes>
-			<class name="osintMonTestCases.VerifyTitle"></class>
+			<class name="verifyTitle.VerifyTitle"></class>
 		</classes>
 	</test>
 	<test name="NoCredentials">
 		<classes>
-			<class name="invalidTestCases.InvalidLogin"></class>
+			<class name="loginTest.InvalidLogin"></class>
 		</classes>
 	</test>
 	<test name="ValidLogin">
@@ -19,7 +19,7 @@
 		<parameter name="password" value="habeeb@cts" />
 		<parameter name="expectedUserName" value="Welcome Habeeb" />
 		<classes>
-			<class name="validTestcases.ValidLogin"></class>
+			<class name="loginTest.ValidLogin"></class>
 		</classes>
 	</test>
 </suite> <!-- Suite -->

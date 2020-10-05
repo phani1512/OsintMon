@@ -2,77 +2,77 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="OsintMon Suite" duration-ms="55160" started-at="2020-10-05T09:52:26Z" finished-at="2020-10-05T09:53:21Z">
+  <suite name="OsintMon Suite" duration-ms="31728" started-at="2020-10-05T11:39:07Z" finished-at="2020-10-05T11:39:39Z">
     <groups>
     </groups>
-    <test name="VerifyTitle" duration-ms="912" started-at="2020-10-05T09:52:26Z" finished-at="2020-10-05T09:52:27Z">
-      <class name="osintMonTestCases.VerifyTitle">
-        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:osintMonTestCases.VerifyTitle@78c03f1f]" name="verifyPageTitle" duration-ms="31" started-at="2020-10-05T09:52:26Z" finished-at="2020-10-05T09:52:26Z">
+    <test name="VerifyTitle" duration-ms="591" started-at="2020-10-05T11:39:07Z" finished-at="2020-10-05T11:39:07Z">
+      <class name="verifyTitle.VerifyTitle">
+        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:verifyTitle.VerifyTitle@78c03f1f]" name="verifyPageTitle" duration-ms="17" started-at="2020-10-05T11:39:07Z" finished-at="2020-10-05T11:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:osintMonTestCases.VerifyTitle@78c03f1f]" name="getResult" is-config="true" duration-ms="13" started-at="2020-10-05T09:52:26Z" finished-at="2020-10-05T09:52:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:verifyTitle.VerifyTitle@78c03f1f]" name="getResult" is-config="true" duration-ms="9" started-at="2020-10-05T11:39:07Z" finished-at="2020-10-05T11:39:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=VerifyTitle.verifyPageTitle()[pri:0, instance:osintMonTestCases.VerifyTitle@78c03f1f] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=VerifyTitle.verifyPageTitle()[pri:0, instance:verifyTitle.VerifyTitle@78c03f1f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:osintMonTestCases.VerifyTitle@78c03f1f]" name="endReport" is-config="true" duration-ms="826" started-at="2020-10-05T09:52:26Z" finished-at="2020-10-05T09:52:27Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:verifyTitle.VerifyTitle@78c03f1f]" name="endReport" is-config="true" duration-ms="542" started-at="2020-10-05T11:39:07Z" finished-at="2020-10-05T11:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- osintMonTestCases.VerifyTitle -->
+      </class> <!-- verifyTitle.VerifyTitle -->
     </test> <!-- VerifyTitle -->
-    <test name="NoCredentials" duration-ms="29212" started-at="2020-10-05T09:52:27Z" finished-at="2020-10-05T09:52:56Z">
-      <class name="invalidTestCases.InvalidLogin">
-        <test-method status="PASS" signature="NoCredentials()[pri:1, instance:invalidTestCases.InvalidLogin@6325a3ee]" name="NoCredentials" duration-ms="24533" started-at="2020-10-05T09:52:27Z" finished-at="2020-10-05T09:52:52Z">
+    <test name="NoCredentials" duration-ms="11075" started-at="2020-10-05T11:39:08Z" finished-at="2020-10-05T11:39:19Z">
+      <class name="loginTest.InvalidLogin">
+        <test-method status="PASS" signature="NoCredentials()[pri:1, instance:loginTest.InvalidLogin@6325a3ee]" name="NoCredentials" duration-ms="6942" started-at="2020-10-05T11:39:08Z" finished-at="2020-10-05T11:39:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NoCredentials -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:invalidTestCases.InvalidLogin@6325a3ee]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T09:52:52Z" finished-at="2020-10-05T09:52:52Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:loginTest.InvalidLogin@6325a3ee]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T11:39:14Z" finished-at="2020-10-05T11:39:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NoCredentials status=SUCCESS method=InvalidLogin.NoCredentials()[pri:1, instance:invalidTestCases.InvalidLogin@6325a3ee] output={null}]]]>
+                <![CDATA[[TestResult name=NoCredentials status=SUCCESS method=InvalidLogin.NoCredentials()[pri:1, instance:loginTest.InvalidLogin@6325a3ee] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="InvalidCredentials()[pri:2, instance:invalidTestCases.InvalidLogin@6325a3ee]" name="InvalidCredentials" duration-ms="4613" started-at="2020-10-05T09:52:52Z" finished-at="2020-10-05T09:52:56Z">
+        <test-method status="PASS" signature="InvalidCredentials()[pri:2, instance:loginTest.InvalidLogin@6325a3ee]" name="InvalidCredentials" duration-ms="4053" started-at="2020-10-05T11:39:14Z" finished-at="2020-10-05T11:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidCredentials -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:invalidTestCases.InvalidLogin@6325a3ee]" name="getResult" is-config="true" duration-ms="2" started-at="2020-10-05T09:52:56Z" finished-at="2020-10-05T09:52:56Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:loginTest.InvalidLogin@6325a3ee]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T11:39:19Z" finished-at="2020-10-05T11:39:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidCredentials status=SUCCESS method=InvalidLogin.InvalidCredentials()[pri:2, instance:invalidTestCases.InvalidLogin@6325a3ee] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidCredentials status=SUCCESS method=InvalidLogin.InvalidCredentials()[pri:2, instance:loginTest.InvalidLogin@6325a3ee] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:invalidTestCases.InvalidLogin@6325a3ee]" name="endReport" is-config="true" duration-ms="43" started-at="2020-10-05T09:52:56Z" finished-at="2020-10-05T09:52:56Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:loginTest.InvalidLogin@6325a3ee]" name="endReport" is-config="true" duration-ms="56" started-at="2020-10-05T11:39:19Z" finished-at="2020-10-05T11:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- invalidTestCases.InvalidLogin -->
+      </class> <!-- loginTest.InvalidLogin -->
     </test> <!-- NoCredentials -->
-    <test name="ValidLogin" duration-ms="24995" started-at="2020-10-05T09:52:56Z" finished-at="2020-10-05T09:53:21Z">
-      <class name="validTestcases.ValidLogin">
-        <test-method status="PASS" signature="SetUrl()[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="SetUrl" is-config="true" duration-ms="28254" started-at="2020-10-05T09:51:58Z" finished-at="2020-10-05T09:52:26Z">
+    <test name="ValidLogin" duration-ms="20030" started-at="2020-10-05T11:39:19Z" finished-at="2020-10-05T11:39:39Z">
+      <class name="loginTest.ValidLogin">
+        <test-method status="PASS" signature="SetUrl()[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="SetUrl" is-config="true" duration-ms="17585" started-at="2020-10-05T11:38:49Z" finished-at="2020-10-05T11:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUrl -->
-        <test-method status="PASS" signature="validCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:validTestcases.ValidLogin@5b87ed94]" name="validCredentials" duration-ms="16657" started-at="2020-10-05T09:52:56Z" finished-at="2020-10-05T09:53:13Z">
+        <test-method status="PASS" signature="validCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:loginTest.ValidLogin@5b87ed94]" name="validCredentials" duration-ms="12737" started-at="2020-10-05T11:39:19Z" finished-at="2020-10-05T11:39:31Z">
           <params>
             <param index="0">
               <value>
@@ -93,71 +93,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredentials -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T09:53:13Z" finished-at="2020-10-05T09:53:13Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T11:39:31Z" finished-at="2020-10-05T11:39:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validCredentials status=SUCCESS method=ValidLogin.validCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:validTestcases.ValidLogin@5b87ed94] output={null}]]]>
+                <![CDATA[[TestResult name=validCredentials status=SUCCESS method=ValidLogin.validCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:loginTest.ValidLogin@5b87ed94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="viewMonitor()[pri:4, instance:validTestcases.ValidLogin@5b87ed94]" name="viewMonitor" duration-ms="3890" started-at="2020-10-05T09:53:13Z" finished-at="2020-10-05T09:53:17Z">
+        <test-method status="PASS" signature="viewMonitor()[pri:4, instance:loginTest.ValidLogin@5b87ed94]" name="viewMonitor" duration-ms="2207" started-at="2020-10-05T11:39:31Z" finished-at="2020-10-05T11:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewMonitor -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="0" started-at="2020-10-05T09:53:17Z" finished-at="2020-10-05T09:53:17Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T11:39:34Z" finished-at="2020-10-05T11:39:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=viewMonitor status=SUCCESS method=ValidLogin.viewMonitor()[pri:4, instance:validTestcases.ValidLogin@5b87ed94] output={null}]]]>
+                <![CDATA[[TestResult name=viewMonitor status=SUCCESS method=ValidLogin.viewMonitor()[pri:4, instance:loginTest.ValidLogin@5b87ed94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="dropdownSelection()[pri:5, instance:validTestcases.ValidLogin@5b87ed94]" name="dropdownSelection" duration-ms="3273" started-at="2020-10-05T09:53:17Z" finished-at="2020-10-05T09:53:20Z">
+        <test-method status="PASS" signature="dropdownSelection()[pri:5, instance:loginTest.ValidLogin@5b87ed94]" name="dropdownSelection" duration-ms="3642" started-at="2020-10-05T11:39:34Z" finished-at="2020-10-05T11:39:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropdownSelection -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T09:53:20Z" finished-at="2020-10-05T09:53:20Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="2" started-at="2020-10-05T11:39:37Z" finished-at="2020-10-05T11:39:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=dropdownSelection status=SUCCESS method=ValidLogin.dropdownSelection()[pri:5, instance:validTestcases.ValidLogin@5b87ed94] output={null}]]]>
+                <![CDATA[[TestResult name=dropdownSelection status=SUCCESS method=ValidLogin.dropdownSelection()[pri:5, instance:loginTest.ValidLogin@5b87ed94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="logOut()[pri:6, instance:validTestcases.ValidLogin@5b87ed94]" name="logOut" duration-ms="1061" started-at="2020-10-05T09:53:20Z" finished-at="2020-10-05T09:53:21Z">
+        <test-method status="PASS" signature="logOut()[pri:6, instance:loginTest.ValidLogin@5b87ed94]" name="logOut" duration-ms="1326" started-at="2020-10-05T11:39:37Z" finished-at="2020-10-05T11:39:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="1" started-at="2020-10-05T09:53:21Z" finished-at="2020-10-05T09:53:21Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="endReport" is-config="true" duration-ms="85" started-at="2020-10-05T11:39:39Z" finished-at="2020-10-05T11:39:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="getResult" is-config="true" duration-ms="0" started-at="2020-10-05T11:39:39Z" finished-at="2020-10-05T11:39:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logOut status=SUCCESS method=ValidLogin.logOut()[pri:6, instance:validTestcases.ValidLogin@5b87ed94] output={null}]]]>
+                <![CDATA[[TestResult name=logOut status=SUCCESS method=ValidLogin.logOut()[pri:6, instance:loginTest.ValidLogin@5b87ed94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="endReport" is-config="true" duration-ms="89" started-at="2020-10-05T09:53:21Z" finished-at="2020-10-05T09:53:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:validTestcases.ValidLogin@5b87ed94]" name="tearDown" is-config="true" duration-ms="769" started-at="2020-10-05T09:53:21Z" finished-at="2020-10-05T09:53:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:loginTest.ValidLogin@5b87ed94]" name="tearDown" is-config="true" duration-ms="1191" started-at="2020-10-05T11:39:39Z" finished-at="2020-10-05T11:39:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- validTestcases.ValidLogin -->
+      </class> <!-- loginTest.ValidLogin -->
     </test> <!-- ValidLogin -->
   </suite> <!-- OsintMon Suite -->
 </testng-results>

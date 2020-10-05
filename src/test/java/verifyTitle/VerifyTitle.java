@@ -1,4 +1,4 @@
-package osintMonTestCases;
+package verifyTitle;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
